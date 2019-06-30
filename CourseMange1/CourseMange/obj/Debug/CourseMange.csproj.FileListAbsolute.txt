@@ -23,15 +23,5 @@ D:\jsj1801\CourseMange\CourseMange\obj\Debug\CourseMange.pdb
 D:\jsj1801\CourseMange\CourseMange\obj\Debug\CourseMange.csprojResolveAssemblyReference.cache
 D:\jsj1801\CourseMange1\CourseMange\obj\Debug\CourseMange.csprojResolveAssemblyReference.cache
 D:\jsj1801\CourseMange1\CourseMange\obj\Debug\CourseMange.dll
-D:\jsj1801\CourseMange1\CourseMange\bin\CourseMange.dll
-D:\jsj1801\CourseMange1\CourseMange\bin\CourseMange.pdb
-D:\jsj1801\CourseMange1\CourseMange\bin\EntityFramework.xml
-D:\jsj1801\CourseMange1\CourseMange\bin\System.Web.Helpers.xml
-D:\jsj1801\CourseMange1\CourseMange\bin\System.Web.Mvc.xml
-D:\jsj1801\CourseMange1\CourseMange\bin\System.Web.Razor.xml
-D:\jsj1801\CourseMange1\CourseMange\bin\System.Web.WebPages.xml
-D:\jsj1801\CourseMange1\CourseMange\bin\System.Web.WebPages.Deployment.xml
-D:\jsj1801\CourseMange1\CourseMange\bin\System.Web.WebPages.Razor.xml
-D:\jsj1801\CourseMange1\CourseMange\bin\zh-Hans\EntityFramework.resources.dll
-D:\jsj1801\CourseMange1\CourseMange\bin\zh-Hans\System.Web.Providers.resources.dll
-D:\jsj1801\CourseMange1\CourseMange\obj\Debug\CourseMange.pdb
+D:\jsj1801\CourseMange1 - 副本\CourseMange\obj\Debug\CourseMange.csprojResolveAssemblyReference.cache
+D:\jsj1801\CourseMange1 - 副本\CourseMange\obj\Debug\CourseMange.dll

@@ -13,10 +13,10 @@ namespace CourseMange.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CourseMangeEntities5 : DbContext
+    public partial class CourseMangeEntities : DbContext
     {
-        public CourseMangeEntities5()
-            : base("name=CourseMangeEntities5")
+        public CourseMangeEntities()
+            : base("name=CourseMangeEntities")
         {
         }
     
@@ -25,11 +25,11 @@ namespace CourseMange.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<books> books { get; set; }
         public DbSet<Classes> Classes { get; set; }
-        public DbSet<CouresMangments> CouresMangments { get; set; }
-        public DbSet<Course> Course { get; set; }
-        public DbSet<students> students { get; set; }
         public DbSet<Teachers> Teachers { get; set; }
+        public DbSet<students> students { get; set; }
+        public DbSet<CouresMangments> CouresMangments { get; set; }
+        public DbSet<books> books { get; set; }
+        public DbSet<Course> Course { get; set; }
     }
 }

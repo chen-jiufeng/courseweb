@@ -1,4 +1,16 @@
 ﻿<!DOCTYPE html>
+  <style>
+      .sidebar {
+          padding-top:30px;
+          dispaly: flex;
+          flex-direction: column;
+          iustify-content: center;
+      }
+          .sidebar li a {
+              color: #333;
+          }
+
+  </style>
 <html>
 <head>
     <title>@ViewBag.Title</title>
@@ -7,6 +19,23 @@
 </head>
 
 <body>
+    @Html.Partial("navbar","Home")
+    <div class="container body-content">
+         <div class=" col-md-3"></div>
+          <ul  class =" nav navbar-nav sidebar">
+             
+               {
+             <li>@Html.ActionLink("Link.Name","link.Action","link.Controller", new { @class = "navbar-brand" })</li>
+              <li>@Html.ActionLink("Link.Name","link.Action","link.Controller"new { @class = "navbar-brand" })</li>
+               }
+              </ul>
+        </div>
+         
+        <div class=" col-md-9"></div>
+    @RenderBody()
+        <hr />
+        <footer>
+            </div>
     @RenderBody()
 </body>
 </html>

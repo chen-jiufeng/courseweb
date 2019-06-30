@@ -1,0 +1,25 @@
+﻿@using CourseMange.Models
+
+@｛
+   var site = (WebsiteInfo)ViewBage.Site;
+｝
+
+<div class="navbar-inverse navbar-fixed-top">
+    <div class="container">
+         <div class="button" class="navbar-toggle" data-tooggle="collapse" data-target=".navbar-collapse">
+             <span class="incon-bar"></span>
+               <span class="incon-bar"></span>
+                 <span class="incon-bar"></span>
+             </button>
+             @Html.ActionLink("应用程序名称", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+             </div>
+        <div class="navbar-collaspse collapse"></div>
+           <ul  class =" nav navbar-nav">
+               @foreach (var link in site.ActionLinks)
+               {
+             <li>@Html.ActionLink(Link,Name,link,Action,link,Controller)</li>
+               }
+           </ul>
+        </div>
+    </div>
+</div>

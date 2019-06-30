@@ -40,6 +40,7 @@ namespace CourseMange
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+            BundleConfing.RegisterBundles(BundleTable.Bundles);
         }
     }
 }
