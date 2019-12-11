@@ -1,0 +1,43 @@
+﻿@model CourseMange.Models.books
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>books</legend>
+
+    <div class="display-label">语文Id</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.语文Id)
+    </div>
+
+    <div class="display-label">程序开发Id</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.程序开发Id)
+    </div>
+
+    <div class="display-label">计算机文化基础Id</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.计算机文化基础Id)
+    </div>
+
+    <div class="display-label">asp动态网页设计Id</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.asp动态网页设计Id)
+    </div>
+
+    <div class="display-label">英语Id</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.英语Id)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

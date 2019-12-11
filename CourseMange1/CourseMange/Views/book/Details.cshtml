@@ -1,0 +1,40 @@
+﻿@model CourseMange.Models.books
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>books</legend>
+
+    <div class="display-label">语文Id</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.语文Id)
+    </div>
+
+    <div class="display-label">程序开发Id</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.程序开发Id)
+    </div>
+
+    <div class="display-label">计算机文化基础Id</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.计算机文化基础Id)
+    </div>
+
+    <div class="display-label">asp动态网页设计Id</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.asp动态网页设计Id)
+    </div>
+
+    <div class="display-label">英语Id</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.英语Id)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

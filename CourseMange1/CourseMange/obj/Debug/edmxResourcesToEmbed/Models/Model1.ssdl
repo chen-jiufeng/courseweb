@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CourseMangeModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CourseMangeModelStoreContainer">
+    <EntitySet Name="books" EntityType="CourseMangeModel.Store.books" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Classes" EntityType="CourseMangeModel.Store.Classes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CouresMangments" EntityType="CourseMangeModel.Store.CouresMangments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Course" EntityType="CourseMangeModel.Store.Course" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="students" EntityType="CourseMangeModel.Store.students" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Teachers" EntityType="CourseMangeModel.Store.Teachers" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="books">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="语文Id" Type="int" Nullable="false" />
+    <Property Name="程序开发Id" Type="int" Nullable="false" />
+    <Property Name="计算机文化基础Id" Type="int" Nullable="false" />
+    <Property Name="asp动态网页设计Id" Type="int" Nullable="false" />
+    <Property Name="英语Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Classes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TeacherId" Type="int" />
+  </EntityType>
+  <EntityType Name="CouresMangments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ClassId" Type="int" Nullable="false" />
+    <Property Name="CourseId" Type="int" Nullable="false" />
+    <Property Name="Teacher" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Course">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="ClassId" Type="int" Nullable="false" />
+    <Property Name="CourseMangmentId" Type="int" Nullable="false" />
+    <Property Name="TeacherId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="students">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="ClassId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Teachers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<CourseMange.Models.books>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            语文Id
+        </th>
+        <th>
+            程序开发Id
+        </th>
+        <th>
+            计算机文化基础Id
+        </th>
+        <th>
+            asp动态网页设计Id
+        </th>
+        <th>
+            英语Id
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.语文Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.程序开发Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.计算机文化基础Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.asp动态网页设计Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.英语Id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

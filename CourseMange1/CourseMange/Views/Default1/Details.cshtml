@@ -1,0 +1,30 @@
+﻿@model CourseMange.Models.CouresMangments
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>CouresMangments</legend>
+
+    <div class="display-label">ClassId</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ClassId)
+    </div>
+
+    <div class="display-label">CourseId</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CourseId)
+    </div>
+
+    <div class="display-label">Teacher</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Teacher)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
